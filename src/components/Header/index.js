@@ -330,7 +330,7 @@ export default function Header() {
         <WalletLogoBox>
           <WalletLogoBox2>
             <IconWrapper active={config.symbol === item.symbol && item.type === config.env}>
-              {/* <img src={icon} alt={'Icon'} /> */}
+              { <img src={icon} alt={'Icon'} /> /}
               <TokenLogo address={item.symbol} size={'46px'}></TokenLogo>
             </IconWrapper>
             <OptionCardLeft>
@@ -386,7 +386,7 @@ export default function Header() {
                     return (
                       <OptionCardClickable key={index} active={config.symbol === item.symbol && item.type === config.env} onClick={() => {openUrl(item)}}>
                         {Option(item)}
-                        {/* <img alt={''} src={AddIcon} /> */}
+                        {/ <img alt={''} src={AddIcon} /> /}
                       </OptionCardClickable>
                     )
                   })
